@@ -25,11 +25,14 @@ struct InitParams parse_args(int argc, char** args) {
     if (argc > 2) {
         server_error_handler("Expected 1 para: port", Fatal);
     } else if (argc == 2) {
-        port = atoi(args[0]) || default_port;
+        port = atoi(args[0]);
+    } else {
+        port = default_port;
     }
 
+
     struct InitParams params = {
-            .port = port,
+            .port = default_port,
             .connection_number = default_connection_number,
     };
     return params;
@@ -40,8 +43,8 @@ struct InitParams parse_args(int argc, char** args) {
 struct sockaddr_in init_address(int port) {
     struct sockaddr_in address = {
             .sin_family = AF_INET,
-            .sin_addr.s_addr = htonl(INADDR_ANY),
             .sin_port = htons(port),
+            .sin_addr.s_addr = htonl(INADDR_ANY),
     };
     return address;
 }
@@ -51,21 +54,18 @@ int init_socket(struct sockaddr* address, unsigned int connection_number) {
     int socket_descriptor;
     int on;
     int r;
-    char* err_msg;
 
     socket_descriptor = socket(AF_INET, SOCK_STREAM, 0);
     setsockopt(socket_descriptor, SOL_SOCKET, SO_REUSEADDR, &on, sizeof(on));
 
-    r = bind(socket_descriptor, address, sizeof(address));
+    r = bind(socket_descriptor, address, sizeof(*address));
     if(r) {
-        sprintf(err_msg, "Error binding socket with code %i\n");
-        server_error_handler(err_msg, Fatal);
+        server_error_handler("Error binding socket", Fatal);
     }
 
     r = listen(socket_descriptor, connection_number);
     if (r) {
-        sprintf(err_msg, "Error listen socket with code %i\n");
-        server_error_handler(err_msg, Fatal);
+        server_error_handler("Error listen socket", Fatal);
     }
 
     return socket_descriptor;
