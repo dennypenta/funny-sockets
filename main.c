@@ -11,6 +11,7 @@
 #include <netdb.h>
 #include <fcntl.h>
 
+#include "cmd/init.h"
 #include "pkg/errors.h"
 
 
@@ -59,27 +60,28 @@ char* server_example() {
     return buf;
 }
 
-static void set_address(char* port, struct sockaddr_in *sap, char* protocol) {
-    struct servent *sp;
-    struct hostent *hp;
-    char* endptr;
-    short int_port;
-
-    bzero(sap, sizeof(*sap));
-    sap->sin_family = AF_INET;
-}
-
 
 int main(int argc, char** argv) {
-    int port;
+    struct InitParams params = parse_args(argc, argv);
+    struct sockaddr_in address = init_address(params.port);
+    int socket_descriptor = init_socket((struct sockaddr*)&address, params.connection_number);
 
-    if (argc > 2) {
-        server_error_handler("Expected 1 para: port", Fatal);
-    } else if (argc == 2) {
-        port = atoi(argv[0]);
-    } else {
-        port = 9000;
+    struct sockaddr_in peer;
+    int peer_descriptor;
+
+    peer_descriptor = accept(socket_descriptor, (struct sockaddr*)&peer, sizeof(peer));
+    if (peer_descriptor < 0) {
+        server_error_handler("Error accept request", Info);
     }
 
-    printf("Port: %i\n", port);
+    send(peer_descriptor, "hello", 4, 0);
+
+    if (shutdown(socket_descriptor, 0)) {
+        server_error_handler("Error shutdown socket", Info);
+    }
+    if (shutdown(peer_descriptor, 0)) {
+        server_error_handler("Error shutdown socket", Info);
+    }
+
+    exit(0);
 }
