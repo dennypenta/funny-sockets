@@ -5,10 +5,20 @@
 #include <stdlib.h>
 
 
-void server_error_handler(char* message, int fatal) {
+enum ErrorMode {
+    Info = 0,
+    Fatal = 1,
+};
+
+int isFatal(enum ErrorMode mode) {
+    return mode == Fatal;
+}
+
+
+void server_error_handler(char* message, enum ErrorMode mode) {
     perror(message);
 
-    if (fatal) {
+    if (isFatal(mode)) {
         exit(1);
     }
 }
@@ -27,32 +37,32 @@ char* server_example() {
 
     s = socket(AF_INET, SOCK_STREAM, 0);
     if (s < 0) {
-        server_error_handler("Error init socket", 1);
+        server_error_handler("Error init socket", Fatal);
     }
 
     rc = bind(s, (struct sockaddr *)&local, sizeof(local));
     if (rc < 0) {
-        server_error_handler("Error binding socket", 1);
+        server_error_handler("Error binding socket", Fatal);
     }
 
     rc = listen(s, connection_number);
     if (rc) {
-        server_error_handler("Error listen socket", 1);
+        server_error_handler("Error listen socket", Fatal);
     }
 
     s1 = accept(s, NULL, NULL);
     if (s1 < 0) {
-        server_error_handler("Error accept request", 1);
+        server_error_handler("Error accept request", Fatal);
     }
 
     rc = recv(s1, buf, 1, 0);
     if (rc <= 0) {
-        server_error_handler("Error receiving message", 0);
+        server_error_handler("Error receiving message", Info);
     }
 
     rc = send(s1, "2", 1, 0);
     if (rc <= 0) {
-        server_error_handler("Error sending message", 0);
+        server_error_handler("Error sending message", Info);
     }
 
     return buf;
