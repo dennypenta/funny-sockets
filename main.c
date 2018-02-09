@@ -1,27 +1,18 @@
+#include <sys/time.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <stdio.h>
+#include <unistd.h>
+#include <stdarg.h>
 #include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <netdb.h>
+#include <fcntl.h>
 
+#include "pkg/errors.h"
 
-enum ErrorMode {
-    Info = 0,
-    Fatal = 1,
-};
-
-int isFatal(enum ErrorMode mode) {
-    return mode == Fatal;
-}
-
-
-void server_error_handler(char* message, enum ErrorMode mode) {
-    perror(message);
-
-    if (isFatal(mode)) {
-        exit(1);
-    }
-}
 
 char* server_example() {
     struct sockaddr_in local = {
@@ -68,8 +59,27 @@ char* server_example() {
     return buf;
 }
 
+static void set_address(char* port, struct sockaddr_in *sap, char* protocol) {
+    struct servent *sp;
+    struct hostent *hp;
+    char* endptr;
+    short int_port;
 
-int main() {
-    server_example();
-    return 0;
+    bzero(sap, sizeof(*sap));
+    sap->sin_family = AF_INET;
+}
+
+
+int main(int argc, char** argv) {
+    int port;
+
+    if (argc > 2) {
+        server_error_handler("Expected 1 para: port", Fatal);
+    } else if (argc == 2) {
+        port = atoi(argv[0]);
+    } else {
+        port = 9000;
+    }
+
+    printf("Port: %i\n", port);
 }

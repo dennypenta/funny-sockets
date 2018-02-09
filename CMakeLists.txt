@@ -3,4 +3,4 @@ project(sockets C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(sockets main.c)
+add_executable(sockets main.c cmd/app/init.c cmd/app/init.h pkg/errors.c pkg/errors.h)
