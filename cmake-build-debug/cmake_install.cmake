@@ -1,4 +1,4 @@
-# Install script for directory: /Users/denisdvornikov/projects/sockets
+# Install script for directory: /Users/denny/projects/clang/sockets
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/denisdvornikov/projects/sockets/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/denny/projects/clang/sockets/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

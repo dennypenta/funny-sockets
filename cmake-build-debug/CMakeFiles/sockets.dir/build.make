@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = "/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = "/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/denisdvornikov/projects/sockets
+CMAKE_SOURCE_DIR = /Users/denny/projects/clang/sockets
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/denisdvornikov/projects/sockets/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/denny/projects/clang/sockets/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sockets.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/sockets.dir/flags.make
 
 CMakeFiles/sockets.dir/main.c.o: CMakeFiles/sockets.dir/flags.make
 CMakeFiles/sockets.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sockets.dir/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sockets.dir/main.c.o   -c /Users/denisdvornikov/projects/sockets/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sockets.dir/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sockets.dir/main.c.o   -c /Users/denny/projects/clang/sockets/main.c
 
 CMakeFiles/sockets.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sockets.dir/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/denisdvornikov/projects/sockets/main.c > CMakeFiles/sockets.dir/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/denny/projects/clang/sockets/main.c > CMakeFiles/sockets.dir/main.c.i
 
 CMakeFiles/sockets.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sockets.dir/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/denisdvornikov/projects/sockets/main.c -o CMakeFiles/sockets.dir/main.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/denny/projects/clang/sockets/main.c -o CMakeFiles/sockets.dir/main.c.s
 
 CMakeFiles/sockets.dir/main.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/sockets.dir/main.c.o.provides.build: CMakeFiles/sockets.dir/main.c.o
 
 CMakeFiles/sockets.dir/cmd/init.c.o: CMakeFiles/sockets.dir/flags.make
 CMakeFiles/sockets.dir/cmd/init.c.o: ../cmd/init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sockets.dir/cmd/init.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sockets.dir/cmd/init.c.o   -c /Users/denisdvornikov/projects/sockets/cmd/init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sockets.dir/cmd/init.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sockets.dir/cmd/init.c.o   -c /Users/denny/projects/clang/sockets/cmd/init.c
 
 CMakeFiles/sockets.dir/cmd/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sockets.dir/cmd/init.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/denisdvornikov/projects/sockets/cmd/init.c > CMakeFiles/sockets.dir/cmd/init.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/denny/projects/clang/sockets/cmd/init.c > CMakeFiles/sockets.dir/cmd/init.c.i
 
 CMakeFiles/sockets.dir/cmd/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sockets.dir/cmd/init.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/denisdvornikov/projects/sockets/cmd/init.c -o CMakeFiles/sockets.dir/cmd/init.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/denny/projects/clang/sockets/cmd/init.c -o CMakeFiles/sockets.dir/cmd/init.c.s
 
 CMakeFiles/sockets.dir/cmd/init.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/sockets.dir/cmd/init.c.o.provides.build: CMakeFiles/sockets.dir/cmd/i
 
 CMakeFiles/sockets.dir/pkg/errors.c.o: CMakeFiles/sockets.dir/flags.make
 CMakeFiles/sockets.dir/pkg/errors.c.o: ../pkg/errors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/sockets.dir/pkg/errors.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sockets.dir/pkg/errors.c.o   -c /Users/denisdvornikov/projects/sockets/pkg/errors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/sockets.dir/pkg/errors.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sockets.dir/pkg/errors.c.o   -c /Users/denny/projects/clang/sockets/pkg/errors.c
 
 CMakeFiles/sockets.dir/pkg/errors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sockets.dir/pkg/errors.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/denisdvornikov/projects/sockets/pkg/errors.c > CMakeFiles/sockets.dir/pkg/errors.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/denny/projects/clang/sockets/pkg/errors.c > CMakeFiles/sockets.dir/pkg/errors.c.i
 
 CMakeFiles/sockets.dir/pkg/errors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sockets.dir/pkg/errors.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/denisdvornikov/projects/sockets/pkg/errors.c -o CMakeFiles/sockets.dir/pkg/errors.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/denny/projects/clang/sockets/pkg/errors.c -o CMakeFiles/sockets.dir/pkg/errors.c.s
 
 CMakeFiles/sockets.dir/pkg/errors.c.o.requires:
 
@@ -129,11 +129,36 @@ CMakeFiles/sockets.dir/pkg/errors.c.o.provides: CMakeFiles/sockets.dir/pkg/error
 CMakeFiles/sockets.dir/pkg/errors.c.o.provides.build: CMakeFiles/sockets.dir/pkg/errors.c.o
 
 
+CMakeFiles/sockets.dir/example_server.c.o: CMakeFiles/sockets.dir/flags.make
+CMakeFiles/sockets.dir/example_server.c.o: ../example_server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/sockets.dir/example_server.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sockets.dir/example_server.c.o   -c /Users/denny/projects/clang/sockets/example_server.c
+
+CMakeFiles/sockets.dir/example_server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sockets.dir/example_server.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/denny/projects/clang/sockets/example_server.c > CMakeFiles/sockets.dir/example_server.c.i
+
+CMakeFiles/sockets.dir/example_server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sockets.dir/example_server.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/denny/projects/clang/sockets/example_server.c -o CMakeFiles/sockets.dir/example_server.c.s
+
+CMakeFiles/sockets.dir/example_server.c.o.requires:
+
+.PHONY : CMakeFiles/sockets.dir/example_server.c.o.requires
+
+CMakeFiles/sockets.dir/example_server.c.o.provides: CMakeFiles/sockets.dir/example_server.c.o.requires
+	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/example_server.c.o.provides.build
+.PHONY : CMakeFiles/sockets.dir/example_server.c.o.provides
+
+CMakeFiles/sockets.dir/example_server.c.o.provides.build: CMakeFiles/sockets.dir/example_server.c.o
+
+
 # Object files for target sockets
 sockets_OBJECTS = \
 "CMakeFiles/sockets.dir/main.c.o" \
 "CMakeFiles/sockets.dir/cmd/init.c.o" \
-"CMakeFiles/sockets.dir/pkg/errors.c.o"
+"CMakeFiles/sockets.dir/pkg/errors.c.o" \
+"CMakeFiles/sockets.dir/example_server.c.o"
 
 # External object files for target sockets
 sockets_EXTERNAL_OBJECTS =
@@ -141,9 +166,10 @@ sockets_EXTERNAL_OBJECTS =
 sockets: CMakeFiles/sockets.dir/main.c.o
 sockets: CMakeFiles/sockets.dir/cmd/init.c.o
 sockets: CMakeFiles/sockets.dir/pkg/errors.c.o
+sockets: CMakeFiles/sockets.dir/example_server.c.o
 sockets: CMakeFiles/sockets.dir/build.make
 sockets: CMakeFiles/sockets.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable sockets"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable sockets"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sockets.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +180,7 @@ CMakeFiles/sockets.dir/build: sockets
 CMakeFiles/sockets.dir/requires: CMakeFiles/sockets.dir/main.c.o.requires
 CMakeFiles/sockets.dir/requires: CMakeFiles/sockets.dir/cmd/init.c.o.requires
 CMakeFiles/sockets.dir/requires: CMakeFiles/sockets.dir/pkg/errors.c.o.requires
+CMakeFiles/sockets.dir/requires: CMakeFiles/sockets.dir/example_server.c.o.requires
 
 .PHONY : CMakeFiles/sockets.dir/requires
 
@@ -162,6 +189,6 @@ CMakeFiles/sockets.dir/clean:
 .PHONY : CMakeFiles/sockets.dir/clean
 
 CMakeFiles/sockets.dir/depend:
-	cd /Users/denisdvornikov/projects/sockets/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/denisdvornikov/projects/sockets /Users/denisdvornikov/projects/sockets /Users/denisdvornikov/projects/sockets/cmake-build-debug /Users/denisdvornikov/projects/sockets/cmake-build-debug /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/sockets.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/denny/projects/clang/sockets/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/denny/projects/clang/sockets /Users/denny/projects/clang/sockets /Users/denny/projects/clang/sockets/cmake-build-debug /Users/denny/projects/clang/sockets/cmake-build-debug /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/sockets.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sockets.dir/depend
 

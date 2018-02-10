@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = "/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = "/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/denisdvornikov/projects/sockets
+CMAKE_SOURCE_DIR = /Users/denny/projects/clang/sockets
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/denisdvornikov/projects/sockets/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/denny/projects/clang/sockets/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/denisdvornikov/projects/sockets/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ cmd/init.c.s:
 	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/cmd/init.c.s
 .PHONY : cmd/init.c.s
 
+example_server.o: example_server.c.o
+
+.PHONY : example_server.o
+
+# target to build an object file
+example_server.c.o:
+	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/example_server.c.o
+.PHONY : example_server.c.o
+
+example_server.i: example_server.c.i
+
+.PHONY : example_server.i
+
+# target to preprocess a source file
+example_server.c.i:
+	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/example_server.c.i
+.PHONY : example_server.c.i
+
+example_server.s: example_server.c.s
+
+.PHONY : example_server.s
+
+# target to generate assembly for a file
+example_server.c.s:
+	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/example_server.c.s
+.PHONY : example_server.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -216,6 +243,9 @@ help:
 	@echo "... cmd/init.o"
 	@echo "... cmd/init.i"
 	@echo "... cmd/init.s"
+	@echo "... example_server.o"
+	@echo "... example_server.i"
+	@echo "... example_server.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

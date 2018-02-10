@@ -1,4 +1,4 @@
-The system is: Darwin - 17.2.0 - x86_64
+The system is: Darwin - 17.4.0 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
 Build flags: 
@@ -10,35 +10,35 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is AppleClang, found in "/Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out"
+The C compiler identification is AppleClang, found in "/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6bad3/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_6bad3.dir/build.make CMakeFiles/cmTC_6bad3.dir/build
-Building C object CMakeFiles/cmTC_6bad3.dir/testCCompiler.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_6bad3.dir/testCCompiler.c.o   -c /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_6bad3
-"/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_6bad3.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6bad3.dir/testCCompiler.c.o  -o cmTC_6bad3 
+Run Build Command:"/usr/bin/make" "cmTC_92dbb/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_92dbb.dir/build.make CMakeFiles/cmTC_92dbb.dir/build
+Building C object CMakeFiles/cmTC_92dbb.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_92dbb.dir/testCCompiler.c.o   -c /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_92dbb
+"/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_92dbb.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_92dbb.dir/testCCompiler.c.o  -o cmTC_92dbb 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fd765/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_fd765.dir/build.make CMakeFiles/cmTC_fd765.dir/build
-Building C object CMakeFiles/cmTC_fd765.dir/CMakeCCompilerABI.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_fd765.dir/CMakeCCompilerABI.c.o   -c "/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c"
-Linking C executable cmTC_fd765
-"/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_fd765.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_fd765.dir/CMakeCCompilerABI.c.o  -o cmTC_fd765 
+Run Build Command:"/usr/bin/make" "cmTC_f7929/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f7929.dir/build.make CMakeFiles/cmTC_f7929.dir/build
+Building C object CMakeFiles/cmTC_f7929.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_f7929.dir/CMakeCCompilerABI.c.o   -c "/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c"
+Linking C executable cmTC_f7929
+"/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_f7929.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f7929.dir/CMakeCCompilerABI.c.o  -o cmTC_f7929 
 Apple LLVM version 9.0.0 (clang-900.0.39.2)
-Target: x86_64-apple-darwin17.2.0
+Target: x86_64-apple-darwin17.4.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
- "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_fd765 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_fd765.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_f7929 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f7929.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-305
 configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
 Library search paths:
@@ -51,20 +51,20 @@ Framework search paths:
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_fd765/fast"]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_fd765.dir/build.make CMakeFiles/cmTC_fd765.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_fd765.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_fd765.dir/CMakeCCompilerABI.c.o   -c "/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTC_fd765]
-  ignore line: ["/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_fd765.dir/link.txt --verbose=1]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_fd765.dir/CMakeCCompilerABI.c.o  -o cmTC_fd765 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f7929/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f7929.dir/build.make CMakeFiles/cmTC_f7929.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_f7929.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_f7929.dir/CMakeCCompilerABI.c.o   -c "/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTC_f7929]
+  ignore line: ["/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_f7929.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f7929.dir/CMakeCCompilerABI.c.o  -o cmTC_f7929 ]
   ignore line: [Apple LLVM version 9.0.0 (clang-900.0.39.2)]
-  ignore line: [Target: x86_64-apple-darwin17.2.0]
+  ignore line: [Target: x86_64-apple-darwin17.4.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_fd765 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_fd765.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_f7929 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f7929.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
     arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-lto_library] ==> ignore, skip following value
@@ -75,11 +75,11 @@ Parsed C implicit link information from above output:
     arg [-macosx_version_min] ==> ignore
     arg [10.13.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_fd765] ==> ignore
+    arg [cmTC_f7929] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_fd765.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_f7929.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lSystem] ==> lib [System]
     arg [/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a]
   Library search paths: [;/usr/lib;/usr/local/lib]
@@ -98,15 +98,15 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6f8bf/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_6f8bf.dir/build.make CMakeFiles/cmTC_6f8bf.dir/build
-Building C object CMakeFiles/cmTC_6f8bf.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_6f8bf.dir/feature_tests.c.o   -c /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6f8bf
-"/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_6f8bf.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6f8bf.dir/feature_tests.c.o  -o cmTC_6f8bf 
+Run Build Command:"/usr/bin/make" "cmTC_ffb7c/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_ffb7c.dir/build.make CMakeFiles/cmTC_ffb7c.dir/build
+Building C object CMakeFiles/cmTC_ffb7c.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_ffb7c.dir/feature_tests.c.o   -c /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ffb7c
+"/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_ffb7c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ffb7c.dir/feature_tests.c.o  -o cmTC_ffb7c 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -116,15 +116,15 @@ Linking C executable cmTC_6f8bf
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4fafb/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_4fafb.dir/build.make CMakeFiles/cmTC_4fafb.dir/build
-Building C object CMakeFiles/cmTC_4fafb.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_4fafb.dir/feature_tests.c.o   -c /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_4fafb
-"/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_4fafb.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4fafb.dir/feature_tests.c.o  -o cmTC_4fafb 
+Run Build Command:"/usr/bin/make" "cmTC_5c1f8/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_5c1f8.dir/build.make CMakeFiles/cmTC_5c1f8.dir/build
+Building C object CMakeFiles/cmTC_5c1f8.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_5c1f8.dir/feature_tests.c.o   -c /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_5c1f8
+"/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_5c1f8.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5c1f8.dir/feature_tests.c.o  -o cmTC_5c1f8 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -134,15 +134,15 @@ Linking C executable cmTC_4fafb
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e15b0/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_e15b0.dir/build.make CMakeFiles/cmTC_e15b0.dir/build
-Building C object CMakeFiles/cmTC_e15b0.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_e15b0.dir/feature_tests.c.o   -c /Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e15b0
-"/Users/denisdvornikov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.3263.17/CLion 2018.1 EAP.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_e15b0.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e15b0.dir/feature_tests.c.o  -o cmTC_e15b0 
+Run Build Command:"/usr/bin/make" "cmTC_b9e87/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_b9e87.dir/build.make CMakeFiles/cmTC_b9e87.dir/build
+Building C object CMakeFiles/cmTC_b9e87.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_b9e87.dir/feature_tests.c.o   -c /Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b9e87
+"/Users/denny/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_b9e87.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b9e87.dir/feature_tests.c.o  -o cmTC_b9e87 
 
 
     Feature record: C_FEATURE:1c_function_prototypes

@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/denisdvornikov/projects/sockets/cmd/init.c" "/Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/sockets.dir/cmd/init.c.o"
-  "/Users/denisdvornikov/projects/sockets/main.c" "/Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/sockets.dir/main.c.o"
-  "/Users/denisdvornikov/projects/sockets/pkg/errors.c" "/Users/denisdvornikov/projects/sockets/cmake-build-debug/CMakeFiles/sockets.dir/pkg/errors.c.o"
+  "/Users/denny/projects/clang/sockets/cmd/init.c" "/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/sockets.dir/cmd/init.c.o"
+  "/Users/denny/projects/clang/sockets/example_server.c" "/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/sockets.dir/example_server.c.o"
+  "/Users/denny/projects/clang/sockets/main.c" "/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/sockets.dir/main.c.o"
+  "/Users/denny/projects/clang/sockets/pkg/errors.c" "/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/sockets.dir/pkg/errors.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
