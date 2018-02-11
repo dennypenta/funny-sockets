@@ -101,6 +101,12 @@
 		<Unit filename="/Users/denny/projects/clang/sockets/pkg/errors.h">
 			<Option target="sockets"/>
 		</Unit>
+		<Unit filename="/Users/denny/projects/clang/sockets/pkg/read.c">
+			<Option target="sockets"/>
+		</Unit>
+		<Unit filename="/Users/denny/projects/clang/sockets/pkg/read.h">
+			<Option target="sockets"/>
+		</Unit>
 		<Unit filename="/Users/denny/projects/clang/sockets/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

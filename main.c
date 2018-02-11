@@ -2,17 +2,12 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdarg.h>
 #include <stdlib.h>
-#include <string.h>
-#include <errno.h>
-#include <netdb.h>
-#include <fcntl.h>
+#include <stdio.h>
 
 #include "cmd/init.h"
 #include "pkg/errors.h"
+#include "pkg/read.h">
 
 
 int main(int argc, char** argv) {
@@ -28,7 +23,15 @@ int main(int argc, char** argv) {
         server_error_handler("Error accept request", Info);
     }
 
-    send(peer_descriptor, "hello!\n", 8, 0);
+    char buf[50];
+    send(peer_descriptor, "ok", 2, 0);
+//    while (1) {
+//        int rc = readvrec(socket_descriptor, buf, 50);
+//        if (rc <= 0) {
+//            continue;
+//        }
+//        send(peer_descriptor, "ok", 2, 0);
+//    }
 
 //    if (shutdown(socket_descriptor, 0)) {
 //        server_error_handler("Error shutdown socket", Info);

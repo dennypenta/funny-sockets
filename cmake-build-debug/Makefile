@@ -231,6 +231,33 @@ pkg/errors.c.s:
 	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/errors.c.s
 .PHONY : pkg/errors.c.s
 
+pkg/read.o: pkg/read.c.o
+
+.PHONY : pkg/read.o
+
+# target to build an object file
+pkg/read.c.o:
+	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/read.c.o
+.PHONY : pkg/read.c.o
+
+pkg/read.i: pkg/read.c.i
+
+.PHONY : pkg/read.i
+
+# target to preprocess a source file
+pkg/read.c.i:
+	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/read.c.i
+.PHONY : pkg/read.c.i
+
+pkg/read.s: pkg/read.c.s
+
+.PHONY : pkg/read.s
+
+# target to generate assembly for a file
+pkg/read.c.s:
+	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/read.c.s
+.PHONY : pkg/read.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... pkg/errors.o"
 	@echo "... pkg/errors.i"
 	@echo "... pkg/errors.s"
+	@echo "... pkg/read.o"
+	@echo "... pkg/read.i"
+	@echo "... pkg/read.s"
 .PHONY : help
 
 

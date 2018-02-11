@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/sockets.dir/cmd/init.c.o"
   "CMakeFiles/sockets.dir/pkg/errors.c.o"
   "CMakeFiles/sockets.dir/example_server.c.o"
+  "CMakeFiles/sockets.dir/pkg/read.c.o"
   "sockets.pdb"
   "sockets"
 )

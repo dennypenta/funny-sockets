@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/denny/projects/clang/sockets/example_server.c" "/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/sockets.dir/example_server.c.o"
   "/Users/denny/projects/clang/sockets/main.c" "/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/sockets.dir/main.c.o"
   "/Users/denny/projects/clang/sockets/pkg/errors.c" "/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/sockets.dir/pkg/errors.c.o"
+  "/Users/denny/projects/clang/sockets/pkg/read.c" "/Users/denny/projects/clang/sockets/cmake-build-debug/CMakeFiles/sockets.dir/pkg/read.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
