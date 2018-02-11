@@ -80,31 +80,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/denny/projects/clang/sockets/cmd/init.c">
-			<Option target="sockets"/>
-		</Unit>
-		<Unit filename="/Users/denny/projects/clang/sockets/cmd/init.h">
-			<Option target="sockets"/>
-		</Unit>
-		<Unit filename="/Users/denny/projects/clang/sockets/example_server.c">
-			<Option target="sockets"/>
-		</Unit>
-		<Unit filename="/Users/denny/projects/clang/sockets/example_server.h">
+		<Unit filename="/Users/denny/projects/clang/sockets/libs/unp.h">
 			<Option target="sockets"/>
 		</Unit>
 		<Unit filename="/Users/denny/projects/clang/sockets/main.c">
-			<Option target="sockets"/>
-		</Unit>
-		<Unit filename="/Users/denny/projects/clang/sockets/pkg/errors.c">
-			<Option target="sockets"/>
-		</Unit>
-		<Unit filename="/Users/denny/projects/clang/sockets/pkg/errors.h">
-			<Option target="sockets"/>
-		</Unit>
-		<Unit filename="/Users/denny/projects/clang/sockets/pkg/read.c">
-			<Option target="sockets"/>
-		</Unit>
-		<Unit filename="/Users/denny/projects/clang/sockets/pkg/read.h">
 			<Option target="sockets"/>
 		</Unit>
 		<Unit filename="/Users/denny/projects/clang/sockets/CMakeLists.txt">

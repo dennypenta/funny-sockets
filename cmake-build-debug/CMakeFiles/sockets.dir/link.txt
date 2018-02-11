@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/sockets.dir/main.c.o CMakeFiles/sockets.dir/cmd/init.c.o CMakeFiles/sockets.dir/pkg/errors.c.o CMakeFiles/sockets.dir/example_server.c.o CMakeFiles/sockets.dir/pkg/read.c.o  -o sockets 
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/sockets.dir/main.c.o  -o sockets 

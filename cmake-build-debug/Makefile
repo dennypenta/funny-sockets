@@ -123,60 +123,6 @@ sockets/fast:
 	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/build
 .PHONY : sockets/fast
 
-cmd/init.o: cmd/init.c.o
-
-.PHONY : cmd/init.o
-
-# target to build an object file
-cmd/init.c.o:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/cmd/init.c.o
-.PHONY : cmd/init.c.o
-
-cmd/init.i: cmd/init.c.i
-
-.PHONY : cmd/init.i
-
-# target to preprocess a source file
-cmd/init.c.i:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/cmd/init.c.i
-.PHONY : cmd/init.c.i
-
-cmd/init.s: cmd/init.c.s
-
-.PHONY : cmd/init.s
-
-# target to generate assembly for a file
-cmd/init.c.s:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/cmd/init.c.s
-.PHONY : cmd/init.c.s
-
-example_server.o: example_server.c.o
-
-.PHONY : example_server.o
-
-# target to build an object file
-example_server.c.o:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/example_server.c.o
-.PHONY : example_server.c.o
-
-example_server.i: example_server.c.i
-
-.PHONY : example_server.i
-
-# target to preprocess a source file
-example_server.c.i:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/example_server.c.i
-.PHONY : example_server.c.i
-
-example_server.s: example_server.c.s
-
-.PHONY : example_server.s
-
-# target to generate assembly for a file
-example_server.c.s:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/example_server.c.s
-.PHONY : example_server.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -204,60 +150,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/main.c.s
 .PHONY : main.c.s
 
-pkg/errors.o: pkg/errors.c.o
-
-.PHONY : pkg/errors.o
-
-# target to build an object file
-pkg/errors.c.o:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/errors.c.o
-.PHONY : pkg/errors.c.o
-
-pkg/errors.i: pkg/errors.c.i
-
-.PHONY : pkg/errors.i
-
-# target to preprocess a source file
-pkg/errors.c.i:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/errors.c.i
-.PHONY : pkg/errors.c.i
-
-pkg/errors.s: pkg/errors.c.s
-
-.PHONY : pkg/errors.s
-
-# target to generate assembly for a file
-pkg/errors.c.s:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/errors.c.s
-.PHONY : pkg/errors.c.s
-
-pkg/read.o: pkg/read.c.o
-
-.PHONY : pkg/read.o
-
-# target to build an object file
-pkg/read.c.o:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/read.c.o
-.PHONY : pkg/read.c.o
-
-pkg/read.i: pkg/read.c.i
-
-.PHONY : pkg/read.i
-
-# target to preprocess a source file
-pkg/read.c.i:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/read.c.i
-.PHONY : pkg/read.c.i
-
-pkg/read.s: pkg/read.c.s
-
-.PHONY : pkg/read.s
-
-# target to generate assembly for a file
-pkg/read.c.s:
-	$(MAKE) -f CMakeFiles/sockets.dir/build.make CMakeFiles/sockets.dir/pkg/read.c.s
-.PHONY : pkg/read.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,21 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... sockets"
-	@echo "... cmd/init.o"
-	@echo "... cmd/init.i"
-	@echo "... cmd/init.s"
-	@echo "... example_server.o"
-	@echo "... example_server.i"
-	@echo "... example_server.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... pkg/errors.o"
-	@echo "... pkg/errors.i"
-	@echo "... pkg/errors.s"
-	@echo "... pkg/read.o"
-	@echo "... pkg/read.i"
-	@echo "... pkg/read.s"
 .PHONY : help
 
 
